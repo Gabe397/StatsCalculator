@@ -44,3 +44,4 @@ test('Calculator add array of 1,2,3,4 and get result 10', () => {
     expect(Calc.result).toBe(10);
 
 });
+

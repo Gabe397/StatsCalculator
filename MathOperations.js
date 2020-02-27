@@ -38,6 +38,7 @@ class MathOperations {
         return result;
 
     }
+
 }
 
 module.exports = MathOperations;

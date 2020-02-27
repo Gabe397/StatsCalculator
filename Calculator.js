@@ -1,6 +1,6 @@
 const MathOperations = require('./MathOperations.js');
-
 class Calculator{
+
     add(a = null, b = null) {
         if (Array.isArray(a)) {
             return this.result = MathOperations.sum(a);
@@ -33,10 +33,6 @@ class Calculator{
     sumList(array){
         return this.result = MathOperations.sumList(array)
     }
-
-
-
-
 
 }
 
