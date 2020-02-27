@@ -4,6 +4,9 @@ const division = require('./division');
 const subtraction = require('./subtraction');
 const squaring = require('./squaring');
 const squareRooting = require('./squareRooting');
+const meanStats = require('./meanStats');
+const modeStats = require('./modeStats');
+const standardDeviation = require('./standardDeviation');
 
 class MathOperations {
     static sum(a = null, b = null) {
@@ -37,6 +40,18 @@ class MathOperations {
 
         return result;
 
+    }
+
+    static mean(myarray = []){
+        return meanStats.mean(myarray)
+    }
+
+    static mode(myarray = []){
+        return modeStats.mode(myarray)
+    }
+
+    static standardDeviation(myarray = []){
+        return standardDeviation.standardDeviation(myarray)
     }
 }
 

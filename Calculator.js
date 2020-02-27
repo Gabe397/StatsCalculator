@@ -34,6 +34,17 @@ class Calculator{
         return this.result = MathOperations.sumList(array)
     }
 
+    mean(array){
+        return this.result = MathOperations.mean(array)
+    }
+
+    mode(array){
+        return this.result = MathOperations.mode(array)
+    }
+
+    standardDeviation(array){
+        return this.result = MathOperations.standardDeviation(array)
+    }
 
 
 
