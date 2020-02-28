@@ -1,6 +1,7 @@
 const meanStats = require('./meanStats');
 const modeStats = require('./modeStats');
 const standardDeviation = require('./standardDeviation');
+const skewness = require('./skewness');
 
 class DescriptiveStatsOperations {
 
@@ -14,6 +15,10 @@ class DescriptiveStatsOperations {
 
     static standardDeviation(myarray = []){
         return standardDeviation.standardDeviation(myarray)
+    }
+
+    static sampleSkewness(myarray =[]){
+        return skewness.sampleSkewness(myarray)
     }
 }
 

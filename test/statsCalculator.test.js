@@ -23,3 +23,11 @@ test('Calculator get standard deviation of array of 2, 4, 4, 4, 5, 5, 7, 9 and g
     expect(Calc.result).toBe(2);
 
 });
+
+test('Calculator get skewness of array of 2, 4, 6, 3, 1 and get result 0.590128656384365', () => {
+    let Calc = new statsCalculator();
+    let myArray = [2, 4, 6, 3, 1];
+    expect(Calc.sampleSkewness(myArray)).toBe(0.590128656384365);
+    expect(Calc.result).toBe(0.590128656384365);
+
+});

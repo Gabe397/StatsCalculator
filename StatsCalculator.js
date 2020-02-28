@@ -14,6 +14,10 @@ class StatsCalculator{
         return this.result = StatsOperations.standardDeviation(array)
     }
 
+    sampleSkewness(array){
+        return this.result = StatsOperations.sampleSkewness(array)
+    }
+
 }
 
 module.exports = StatsCalculator;
