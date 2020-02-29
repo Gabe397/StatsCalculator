@@ -22,6 +22,10 @@ class StatsCalculator{
         return this.result = StatsOperations.standardDeviation(array)
     }
 
+    sampleCorrelation(array,array2){
+        return this.result = StatsOperations.sampleCorrelation(array,array2)
+    }
+
     sampleSkewness(array){
         return this.result = StatsOperations.sampleSkewness(array)
     }

@@ -3,6 +3,7 @@ const medianStats = require('./medianStats');
 const modeStats = require('./modeStats');
 const varianceStats = require('./varianceStats');
 const standardDeviation = require('./standardDeviation');
+const sampleCorrelation = require('./sampleCorrelationStats');
 const skewness = require('./skewness');
 
 class DescriptiveStatsOperations {
@@ -24,6 +25,10 @@ class DescriptiveStatsOperations {
 
     static standardDeviation(myarray = []){
         return standardDeviation.standardDeviation(myarray)
+    }
+
+    static sampleCorrelation(myarray = [], myarray2 = []){
+        return parseFloat(sampleCorrelation.sampleCorrelation(myarray,myarray2))
     }
 
     static sampleSkewness(myarray =[]){

@@ -40,6 +40,16 @@ test('Calculator get standard deviation of array of 2, 4, 4, 4, 5, 5, 7, 9 and g
 
 });
 
+test('Calculator get sample correlation of array 1,2,3,4 and array 2,4,6,8', () => {
+    let Calc = new statsCalculator();
+    let myArray = [2,4,6,8];
+    let myArray2 = [2,4,6,10];
+    expect(Calc.sampleCorrelation(myArray,myArray2)).toBe(0.9827);
+    expect(Calc.result).toBe(0.9827);
+
+});
+
+
 test('Calculator get skewness of array of 2, 4, 6, 3, 1 and get result 0.590128656384365', () => {
     let Calc = new statsCalculator();
     let myArray = [2, 4, 6, 3, 1];
