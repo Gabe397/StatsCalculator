@@ -57,3 +57,12 @@ test('Calculator get skewness of array of 2, 4, 6, 3, 1 and get result 0.5901286
     expect(Calc.result).toBe(0.590128656384365);
 
 });
+
+test('Calculator get the z score of 5 and array 2,4,6,8', () => {
+    let Calc = new statsCalculator();
+    let myArray = [2,4,6,8];
+    let num = 5;
+    expect(Calc.zScore(num,myArray)).toBe(0.9827);
+    expect(Calc.result).toBe(0.9827);
+
+});

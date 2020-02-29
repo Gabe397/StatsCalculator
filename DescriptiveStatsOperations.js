@@ -5,6 +5,7 @@ const varianceStats = require('./varianceStats');
 const standardDeviation = require('./standardDeviation');
 const sampleCorrelation = require('./sampleCorrelationStats');
 const skewness = require('./skewness');
+const zscore = require('./zScoreStat');
 
 class DescriptiveStatsOperations {
 
@@ -33,6 +34,10 @@ class DescriptiveStatsOperations {
 
     static sampleSkewness(myarray =[]){
         return skewness.sampleSkewness(myarray)
+    }
+
+    static zScore(num, myarray = []){
+        return zscore.zScore(num,myarray)
     }
 }
 

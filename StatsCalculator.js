@@ -30,6 +30,10 @@ class StatsCalculator{
         return this.result = StatsOperations.sampleSkewness(array)
     }
 
+    zScore(num,array){
+        return this.result = StatsOperations.zScore((num,array))
+    }
+
 }
 
 module.exports = StatsCalculator;
