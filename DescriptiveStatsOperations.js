@@ -1,4 +1,5 @@
 const meanStats = require('./meanStats');
+const medianStats = require('./medianStats');
 const modeStats = require('./modeStats');
 const standardDeviation = require('./standardDeviation');
 const skewness = require('./skewness');
@@ -9,6 +10,9 @@ class DescriptiveStatsOperations {
         return meanStats.mean(myarray)
     }
 
+    static median(myarray = []){
+        return medianStats.median(myarray)
+    }
     static mode(myarray = []){
         return modeStats.mode(myarray)
     }

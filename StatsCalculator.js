@@ -6,6 +6,10 @@ class StatsCalculator{
         return this.result = StatsOperations.mean(array)
     }
 
+    median(array){
+        return this.result = StatsOperations.median(array)
+    }
+
     mode(array){
         return this.result = StatsOperations.mode(array)
     }

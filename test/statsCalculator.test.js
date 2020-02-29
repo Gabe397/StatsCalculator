@@ -8,6 +8,14 @@ test('Calculator get mean of array of 1,4,7 and get result 4', () => {
 
 });
 
+test('Calculator get median of array of 2,5,7 and get result 5', () => {
+    let Calc = new statsCalculator();
+    let myArray = [2,5,7];
+    expect(Calc.median(myArray)).toBe(5);
+    expect(Calc.result).toBe(5);
+
+});
+
 test('Calculator get mode of array of 1,4,7,4 and get result 4', () => {
     let Calc = new statsCalculator();
     let myArray = [1,4,7,4];
