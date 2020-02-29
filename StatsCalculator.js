@@ -14,6 +14,10 @@ class StatsCalculator{
         return this.result = StatsOperations.mode(array)
     }
 
+    variance(array){
+        return this.result = StatsOperations.variance(array)
+    }
+
     standardDeviation(array){
         return this.result = StatsOperations.standardDeviation(array)
     }

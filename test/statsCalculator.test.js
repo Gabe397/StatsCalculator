@@ -24,6 +24,14 @@ test('Calculator get mode of array of 1,4,7,4 and get result 4', () => {
 
 });
 
+test('Calculator get variance of array of 3,6,9,12 and get result 11.25', () => {
+    let Calc = new statsCalculator();
+    let myArray = [3,6,9,12];
+    expect(Calc.variance(myArray)).toBe(11.25);
+    expect(Calc.result).toBe(11.25);
+
+});
+
 test('Calculator get standard deviation of array of 2, 4, 4, 4, 5, 5, 7, 9 and get result 2', () => {
     let Calc = new statsCalculator();
     let myArray = [2, 4, 4, 4, 5, 5, 7, 9];
