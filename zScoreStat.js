@@ -5,9 +5,9 @@ var std = require('./standardDeviation.js');
 class zScoreStat{
     static zScore(a = number, myarray = []) {
         let result = 0;
-        let mean = m.mean(myarray);
+        let means = m.mean(myarray);
         let standard = std.standardDeviation(myarray);
-        result = ss.zScore(a,mean,standard);
+        result = parseFloat(ss.zScore(a,means,standard).toFixed(4));
         return result;
     }
 }

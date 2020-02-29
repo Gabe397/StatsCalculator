@@ -31,7 +31,7 @@ class StatsCalculator{
     }
 
     zScore(num,array){
-        return this.result = StatsOperations.zScore((num,array))
+        return this.result = StatsOperations.zScore(num,array)
     }
 
 }
