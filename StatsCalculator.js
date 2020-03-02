@@ -26,12 +26,20 @@ class StatsCalculator{
         return this.result = StatsOperations.sampleCorrelation(array,array2)
     }
 
+    populationCorrelation(array,array2){
+        return this.result = StatsOperations.populationCorrelation(array,array2)
+    }
+
     sampleSkewness(array){
         return this.result = StatsOperations.sampleSkewness(array)
     }
 
     zScore(num,array){
         return this.result = StatsOperations.zScore(num,array)
+    }
+
+    meanDeviation(array){
+        return this.result = StatsOperations.meanDeviation(array);
     }
 
 }

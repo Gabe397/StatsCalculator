@@ -49,6 +49,14 @@ test('Calculator get sample correlation of array 1,2,3,4 and array 2,4,6,8', () 
 
 });
 
+test('Calculator get population correlation of array 1,2,3,4 and array 2,4,6,8', () => {
+    let Calc = new statsCalculator();
+    let myArray = [2,4,6,8];
+    let myArray2 = [2,4,6,10];
+    expect(Calc.populationCorrelation(myArray,myArray2)).toBe(0.9827);
+    expect(Calc.result).toBe(0.9827);
+
+});
 
 test('Calculator get skewness of array of 2, 4, 6, 3, 1 and get result 0.590128656384365', () => {
     let Calc = new statsCalculator();
@@ -64,5 +72,14 @@ test('Calculator get the z score of 2 and array 2,4,6,8', () => {
     let num = 2;
     expect(Calc.zScore(num,myArray)).toBe(-1.3416);
     expect(Calc.result).toBe(-1.3416);
+
+});
+
+test('Calculator gets mean deviation of 3, 6 , 6, 7 ,8, 11, 15, 16 to equal 3.75', () => {
+    let Calc = new statsCalculator();
+    let myArray = [3, 6 , 6, 7 ,8, 11, 15, 16];
+    let num = 2;
+    expect(Calc.meanDeviation(myArray)).toBe(3.75);
+    expect(Calc.result).toBe(3.75);
 
 });
