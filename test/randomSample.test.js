@@ -1,6 +1,6 @@
 const randSamp = require('../PopulationSamplingDir/randomSample');
 
-test('gets mean of 4, 1, 7 to equal 4', () => {
+test('gets a random sample from the array', () => {
     let myArray = [2,4,6,8];
     let num = 2;
     let randomSample = randSamp.getRandomSample(myArray,num);
