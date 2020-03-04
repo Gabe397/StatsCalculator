@@ -43,3 +43,11 @@ test('Get Margin Of Error', () =>{
     let res = popCalc.getMarginOfError(myArray,50);
     expect(res).toBe(0.1789);
 });
+
+test('Get sample size using Cochran Formula', () =>{
+
+    let popCalc = new popSamp;
+
+    let res = popCalc.getCochranSample(50,8);
+    expect(res).toBe(150);
+});

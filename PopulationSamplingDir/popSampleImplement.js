@@ -18,6 +18,10 @@ class popSampleImplement{
         return this.result = popSampFunctions.marginOfError(myarray,pp);
     }
 
+    getCochranSample(pp,margin,){
+        return this.result = popSampFunctions.cochranSampleFormula(pp,margin);
+    }
+
 
 }
 
