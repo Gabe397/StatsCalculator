@@ -10,6 +10,10 @@ class popSampleImplement{
         return this.result = popSampFunctions.sysSample(myarray, min);
     }
 
+    getConfidenceInterval(myarray){
+        return this.result = popSampFunctions.confidenceInterval(myarray);
+    }
+
 
 }
 

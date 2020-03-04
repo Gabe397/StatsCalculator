@@ -20,3 +20,18 @@ test('Check if array has these numbers filtered in from previous array', () =>{
     expect(systematicSample).toContain(4);
     expect(systematicSample).toContain(6);
 });
+
+test('Get Confidence Interval and Return an Array with the Over and Under', () =>{
+    let myArray = [8,15,25,24,9,21,29,17,30,5,6,3,20,16,2,22,28,11,14,13,19,0,12,18,27,4,1,10,23,36];
+    let testArray2 = [8,15,25,24,9,21,29,17,30,5,6.19,15,17.25];
+    let popCalc = new popSamp;
+
+    let result = popCalc.getConfidenceInterval(myArray);
+    let result2 = popCalc.getConfidenceInterval(testArray2);
+
+    expect(result).toContain(12.13107);
+    expect(result).toContain(19.06893);
+
+    expect(result2).toContain(12.62297);
+    expect(result2).toContain(21.44473);
+});
