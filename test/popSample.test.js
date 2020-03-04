@@ -35,3 +35,11 @@ test('Get Confidence Interval and Return an Array with the Over and Under', () =
     expect(result2).toContain(12.62297);
     expect(result2).toContain(21.44473);
 });
+
+test('Get Margin Of Error', () =>{
+    let myArray = [8,15,25,24,9,21,29,17,30,5,6,3,20,16,2,22,28,11,14,13,19,0,12,18,27,4,1,10,23,36];
+    let popCalc = new popSamp;
+
+    let res = popCalc.getMarginOfError(myArray,50);
+    expect(res).toBe(0.1789);
+});

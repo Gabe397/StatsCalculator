@@ -14,6 +14,10 @@ class popSampleImplement{
         return this.result = popSampFunctions.confidenceInterval(myarray);
     }
 
+    getMarginOfError(myarray,pp){
+        return this.result = popSampFunctions.marginOfError(myarray,pp);
+    }
+
 
 }
 

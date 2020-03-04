@@ -1,6 +1,7 @@
-const randomSample = require('/Users/gabe3/WebstormProjects/StatsCalculator/PopulationSamplingDir/randomSample.js');
-const sysSample = require('/Users/gabe3/WebstormProjects/StatsCalculator/PopulationSamplingDir/systematicSample.js');
-const confidenceInterval = require('/Users/gabe3/WebstormProjects/StatsCalculator/PopulationSamplingDir/confidenceInterval.js');
+const randomSample = require('../PopulationSamplingDir/randomSample.js');
+const sysSample = require('../PopulationSamplingDir/systematicSample.js');
+const confidenceInterval = require('../PopulationSamplingDir/confidenceInterval.js');
+const marginOfError = require('../PopulationSamplingDir/marginOfError.js');
 
 
 class populationSampling{
@@ -16,6 +17,9 @@ class populationSampling{
         return confidenceInterval.getConfidenceInterval(myarray);
     }
 
+    static marginOfError(myarray = [],pp){
+        return marginOfError.getMarginOfError(myarray,pp);
+    }
 }
 
 module.exports = populationSampling;
