@@ -1,7 +1,4 @@
-const sum = require('./addition');
-a = 1;
-b = 2;
+const ztable = require('ztable');
+const ss = require('simple-statistics');
 
-c = sum(a,b);
-
-console.log("The answer is: " + c);
+n

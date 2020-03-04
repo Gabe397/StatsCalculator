@@ -22,6 +22,13 @@ class popSampleImplement{
         return this.result = popSampFunctions.cochranSampleFormula(pp,margin);
     }
 
+    getSampleSizeUnknownPopStd(width,gp){
+        return this.result = popSampFunctions.sampleSizeUnknownPopStd(width,gp);
+    }
+
+    getSampleSizeKnownPopStd(moe,std){
+        return this.result = popSampFunctions.sampleSizeKnownPopStd(moe,std);
+    }
 
 }
 

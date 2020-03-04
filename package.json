@@ -15,7 +15,8 @@
   "license": "ISC",
   "dependencies": {
     "seedrandom": "^3.0.5",
-    "simple-statistics": "^7.0.8"
+    "simple-statistics": "^7.0.8",
+    "ztable": "^1.0.7"
   },
   "devDependencies": {
     "coveralls": "^3.0.9",

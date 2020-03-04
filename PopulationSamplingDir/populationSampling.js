@@ -3,6 +3,8 @@ const sysSample = require('../PopulationSamplingDir/systematicSample.js');
 const confidenceInterval = require('../PopulationSamplingDir/confidenceInterval.js');
 const marginOfError = require('../PopulationSamplingDir/marginOfError.js');
 const cochran = require('../PopulationSamplingDir/cochranSampleSize.js');
+const unknownSS = require('../PopulationSamplingDir/sampleSizeUnknownPopStd');
+const knownSS = require('../PopulationSamplingDir/sampleSizeKnownPopStd');
 
 
 class populationSampling{
@@ -24,6 +26,14 @@ class populationSampling{
 
     static cochranSampleFormula(pp,margin){
         return cochran.getCochran(pp,margin);
+    }
+
+    static sampleSizeUnknownPopStd(width,gp){
+        return unknownSS.getSampleSizeNoPopStd(width,gp);
+    }
+
+    static sampleSizeKnownPopStd(std,moe){
+        return knownSS.getSampleSizeKnown(std,moe);
     }
 }
 

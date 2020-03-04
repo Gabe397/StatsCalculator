@@ -51,3 +51,21 @@ test('Get sample size using Cochran Formula', () =>{
     let res = popCalc.getCochranSample(50,8);
     expect(res).toBe(150);
 });
+
+test('Get sample size without Population STD', () =>{
+
+    let popCalc = new popSamp;
+
+    let res = popCalc.getSampleSizeUnknownPopStd(6,51);
+    expect(res).toBe(1067);
+});
+
+test('Get sample size with Population STD', () =>{
+
+    let popCalc = new popSamp;
+
+    let res = popCalc.getSampleSizeKnownPopStd(2.9,0.5);
+    expect(res).toBe(129);
+});
+
+
