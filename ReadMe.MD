@@ -1,6 +1,6 @@
-[![Build Status](https://travis-ci.com/Gabe397/is219hello.svg?branch=master)](https://travis-ci.com/Gabe397/is219hello)
+[![Build Status](https://travis-ci.com/Gabe397/StatsCalculator.svg?branch=master)](https://travis-ci.com/Gabe397/StatsCalculator)
 
-[![Coverage Status](https://coveralls.io/repos/github/Gabe397/is219hello/badge.svg?branch=master)](https://coveralls.io/github/Gabe397/is219hello?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/Gabe397/StatsCalculator/badge.svg?branch=master)](https://coveralls.io/github/Gabe397/StatsCalculator?branch=master)
 
 Encapsulation: When a object keeps its state private inside a class so that Other objects don't have access to this state. Objects can only access functions that are public called methods.
 
