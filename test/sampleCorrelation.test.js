@@ -1,5 +1,14 @@
 const sampleCorrelation = require('../sampleCorrelationStats');
+const RLGSeed = require('../RLGSeed');
+const ss = require('simple-statistics');
 
-test('divides 1 / 2 to equal 0.5', () => {
-    expect(parseFloat(sampleCorrelation.sampleCorrelation([1,2,3,4],[2,3,6,8]))).toBe(0.9845);
+test('Tests for Sample Correlation', () => {
+    let array1 = RLGSeed.generateListSeed(0,90,0, "hello", 10);
+    let array2 = RLGSeed.generateListSeed(0,90,0, "trello", 10);
+
+    let myFunction = parseFloat(sampleCorrelation.sampleCorrelation(array1,array2));
+    let testFunction = parseFloat(ss.sampleCorrelation(array1,array2).toFixed(4))
+
+
+    expect(myFunction).toBe(testFunction);
 });

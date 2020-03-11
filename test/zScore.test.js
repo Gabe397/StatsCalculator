@@ -1,7 +1,9 @@
 const zScore = require('../zScoreStat');
+const randomList = require('../RLGSeed');
 
 test('Test Z Score', () => {
-    let myArray = [2,4,6,8];
     let num = 2;
-    expect(zScore.zScore(num,myArray)).toBe(-1.3416);
+
+    myArray = randomList.generateListSeed(0,90,0, "hello", 10);
+    expect(zScore.zScore(num,myArray)).toBe(-1.2093);
 });
