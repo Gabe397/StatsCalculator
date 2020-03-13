@@ -1,5 +1,5 @@
 const zScore = require('../zScoreStat');
-const randomList = require('../RLGSeed');
+const randomList = require('../RandomGenerationDir/RLGSeed');
 
 test('Test Z Score', () => {
     let num = 2;

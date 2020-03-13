@@ -1,4 +1,4 @@
-const RNGNoSeed = require('../RNGNoSeed');
+const RNGNoSeed = require('../RandomGenerationDir/RNGNoSeed');
 
 test('Generates number without a seed', () => {
     let rngNum = RNGNoSeed.generateNoSeed(0,2,0);

@@ -1,5 +1,5 @@
 const sampleCorrelation = require('../sampleCorrelationStats');
-const RLGSeed = require('../RLGSeed');
+const RLGSeed = require('../RandomGenerationDir/RLGSeed');
 const ss = require('simple-statistics');
 
 test('Tests for Sample Correlation', () => {

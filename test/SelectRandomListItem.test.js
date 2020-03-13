@@ -1,4 +1,4 @@
-const SRLI = require('../SelectRandomListItem');
+const SRLI = require('../RandomGenerationDir/SelectRandomListItem');
 
 test('Selects random item in list', () => {
     let list = [73, 37, 21, 67, 19, 10, 6, 27, 9, 85];

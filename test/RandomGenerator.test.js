@@ -1,4 +1,4 @@
-const RandomGenerator = require('../RandomGenerator');
+const RandomGenerator = require('../RandomGenerationDir/RandomGenerator');
 
 test('Generates number without a seed', () => {
     let Generator = new RandomGenerator();

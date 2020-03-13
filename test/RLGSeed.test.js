@@ -1,4 +1,4 @@
-const RLGSeed = require('../RLGSeed');
+const RLGSeed = require('../RandomGenerationDir/RLGSeed');
 
 test('Generates list with a seed', () => {
     let rngNum = RLGSeed.generateListSeed(0,90,0, "hello", 10);

@@ -1,6 +1,6 @@
 const varianceStats = require('../varianceStats');
 const ss = require ('simple-statistics');
-const RLGSeed = require('../RLGSeed');
+const RLGSeed = require('../RandomGenerationDir/RLGSeed');
 
 test('gets variance of 1,5,10,15 to equal 27.6875', () => {
 
