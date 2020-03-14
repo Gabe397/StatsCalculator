@@ -1,4 +1,4 @@
-const sampleCorrelation = require('../sampleCorrelationStats');
+const sampleCorrelation = require('../DescriptiveStatsDir/sampleCorrelationStats');
 const RLGSeed = require('../RandomGenerationDir/RLGSeed');
 const ss = require('simple-statistics');
 

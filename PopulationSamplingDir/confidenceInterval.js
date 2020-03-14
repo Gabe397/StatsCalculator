@@ -1,5 +1,5 @@
-const meanStats = require('../meanStats');
-const stdStats = require('../standardDeviation');
+const meanStats = require('../DescriptiveStatsDir/meanStats');
+const stdStats = require('../DescriptiveStatsDir/standardDeviation');
 const squareRootStats = require('../squareRooting');
 const ss = require('simple-statistics');
 

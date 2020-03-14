@@ -1,4 +1,4 @@
-const statsCalculator = require('../StatsCalculator');
+const statsCalculator = require('../DescriptiveStatsDir/StatsCalculator');
 
 test('Calculator get mean of array of 1,4,7 and get result 4', () => {
     let Calc = new statsCalculator();

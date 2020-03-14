@@ -1,4 +1,4 @@
-const varianceStats = require('../varianceStats');
+const varianceStats = require('../DescriptiveStatsDir/varianceStats');
 const ss = require ('simple-statistics');
 const RLGSeed = require('../RandomGenerationDir/RLGSeed');
 

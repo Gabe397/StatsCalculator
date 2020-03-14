@@ -1,4 +1,4 @@
-const stdStats = require('../standardDeviation');
+const stdStats = require('../DescriptiveStatsDir/standardDeviation');
 const squareRootStats = require('../squareRooting');
 const ss = require('simple-statistics');
 

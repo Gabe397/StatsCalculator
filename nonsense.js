@@ -65,6 +65,9 @@ var seedrandom = require('seedrandom');
 console.log(result);
 */
 
+
+
+/*
 var seedrandom = require('seedrandom');
 
   function returnMultipleListItems(list, numItems,seed) {
@@ -94,6 +97,14 @@ var seedrandom = require('seedrandom');
 
 
 
-  console.log(returnMultipleListItems(list, 5, "bleh"));
+  console.log(returnMultipleListItems(list, 5, "bleh"));*/
 
+const RLGSeed = require('./RandomGenerationDir/RLGSeed');
+const statsCalculator = require('./DescriptiveStatsDir/meanDeviationStats');
 
+let array1 = RLGSeed.generateListSeed(0,90,0, "hello", 10);
+
+let result = statsCalculator.meanDeviation(array1);
+
+console.log(array1);
+console.log(result);

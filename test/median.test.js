@@ -1,4 +1,4 @@
-const meanStats = require('../medianStats');
+const meanStats = require('../DescriptiveStatsDir/medianStats');
 const ss = require('simple-statistics');
 const randomList = require('../RandomGenerationDir/RLGSeed');
 

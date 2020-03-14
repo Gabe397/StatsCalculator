@@ -1,4 +1,4 @@
-const zScore = require('../zScoreStat');
+const zScore = require('../DescriptiveStatsDir/zScoreStat');
 const randomList = require('../RandomGenerationDir/RLGSeed');
 
 test('Test Z Score', () => {
