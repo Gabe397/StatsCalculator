@@ -5,12 +5,10 @@ class division {
             result = a / b;
             return result;
         }
-        catch{
-            if(b=0){
-                console.log("Can't divide by zero try again")
-            }
-
+        catch(e){
+           logMyErrors(e);
         }
+
     }
 }
 module.exports = division;
