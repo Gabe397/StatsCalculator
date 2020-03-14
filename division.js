@@ -7,6 +7,7 @@ class division {
         }
         catch(e){
            logMyErrors(e);
+           //try
         }
 
     }
